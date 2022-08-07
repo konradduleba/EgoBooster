@@ -27,7 +27,8 @@
     "start": "env-cmd -f ./environments/.env react-app-rewired start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "postbuild": "echo I run command"
   },
   "eslintConfig": {
     "extends": [
