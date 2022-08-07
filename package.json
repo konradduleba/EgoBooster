@@ -27,8 +27,9 @@
     "start": "env-cmd -f ./environments/.env react-app-rewired start",
     "build": "react-scripts build",
     "test": "react-scripts test",
+    "lint": "eslint ./src --fix && csscomb src",
     "eject": "react-scripts eject",
-    "postbuild": "echo I run command"
+    "heroku-postbuild": "npx yarn-deduplicate"
   },
   "eslintConfig": {
     "extends": [
