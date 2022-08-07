@@ -20,7 +20,8 @@
     "sourceType": "module"
   },
   "plugins": [
-    "react"
+//    "react",
+    "@typescript-eslint"
   ],
   "rules": {
     "no-use-before-define": "off",
