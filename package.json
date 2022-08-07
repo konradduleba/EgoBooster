@@ -29,8 +29,7 @@
     "test": "react-scripts test",
     "lint": "eslint ./src --fix && csscomb src",
     "eject": "react-scripts eject",
-    "heroku-postbuild": "npx yarn-deduplicate",
-    "poststart": "npx yarn-deduplicate"
+    "heroku-postbuild": "npx yarn-deduplicate"
   },
   "eslintConfig": {
     "extends": [
