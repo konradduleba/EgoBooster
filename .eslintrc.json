@@ -1,0 +1,66 @@
+{
+  "env": {
+    "browser": true,
+    "node": true
+  },
+  "extends": [
+    "eslint:recommended",
+    "plugin:react/recommended",
+    "plugin:react/jsx-runtime",
+    "plugin:@typescript-eslint/recommended",
+    "prettier",
+    "plugin:prettier/recommended"
+  ],
+  "parser": "@typescript-eslint/parser",
+  "parserOptions": {
+    "ecmaFeatures": {
+      "jsx": true
+    },
+    "ecmaVersion": 12,
+    "sourceType": "module"
+  },
+  "plugins": [
+    "react",
+    "@typescript-eslint"
+  ],
+  "rules": {
+    "no-use-before-define": "off",
+    "@typescript-eslint/no-use-before-define": "off",
+    "@typescript-eslint/explicit-member-accessibility": "off",
+    "@typescript-eslint/explicit-function-return-type": "off",
+    "@typescript-eslint/no-parameter-properties": "off",
+    "@typescript-eslint/ban-ts-comment": "off",
+    "@typescript-eslint/no-explicit-any": "off",
+    "@typescript-eslint/no-shadow": "off",
+    "@typescript-eslint/explicit-module-boundary-types": "off",
+    "@typescript-eslint/no-unused-vars": [
+      "warn",
+      {
+        "args": "after-used", "argsIgnorePattern": "^_"
+      }
+    ],
+    "@typescript-eslint/consistent-type-definitions": ["warn", "type"],
+    "@typescript-eslint/no-empty-function": "warn",
+    "@typescript-eslint/ban-types": "off",
+    "no-eval": "error",
+    "func-style": ["warn", "expression"],
+    "prefer-arrow-callback": "warn",
+    "prefer-const": "warn",
+    "no-var": "warn",
+    "no-console": "off",
+    "no-unused-vars": "off",
+    "jsx-quotes": ["warn", "prefer-double"],
+    "import/no-anonymous-default-export": "off",
+    "react/self-closing-comp": "warn",
+    "react/function-component-definition": ["warn", {
+      "namedComponents": "arrow-function",
+      "unnamedComponents": "arrow-function"
+    }],
+    "react/jsx-curly-brace-presence": ["warn", "never"],
+    "react/prefer-stateless-function": ["warn"],
+    "react/no-multi-comp": "off",
+    "react/display-name": "off",
+    "react/prop-types": "off",
+    "react/react-in-jsx-scope": "off"
+  }
+}

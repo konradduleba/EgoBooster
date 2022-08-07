@@ -1,0 +1,85 @@
+{
+  "name": "ego-booster",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@testing-library/jest-dom": "5.14.1",
+    "@testing-library/react": "13.0.0",
+    "@testing-library/user-event": "13.2.1",
+    "@types/jest": "27.0.1",
+    "@types/node": "16.7.13",
+    "@types/react": "18.0.0",
+    "@types/react-dom": "18.0.0",
+    "@typescript-eslint/eslint-plugin": "^5.32.0",
+    "@typescript-eslint/parser": "^5.32.0",
+    "react": "18.2.0",
+    "react-dom": "18.2.0",
+    "react-scripts": "5.0.1",
+    "typescript": "4.4.2",
+    "web-vitals": "2.1.0"
+  },
+  "scripts": {
+    "start": "env-cmd -f ./environments/.env react-app-rewired start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "lint-staged": {
+    "*.scss": [
+      "csscomb --tty-mode --"
+    ],
+    "*.{js,jsx,tsx}": [
+      "eslint ./src --fix"
+    ]
+  },
+  "jest": {
+    "preset": "ts-jest",
+    "testEnvironment": "node",
+    "transform": {
+      "node_modules/variables/.+\\.(j|t)sx?$": "ts-jest"
+    },
+    "transformIgnorePatterns": [
+      "node_modules/(?!variables/.*)"
+    ],
+    "moduleDirectories": [
+      "node_modules",
+      "src"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "@types/jest": "27.0.1",
+    "@types/node": "16.7.13",
+    "csscomb": "4.3.0",
+    "customize-cra": "1.0.0",
+    "env-cmd": "10.1.0",
+    "eslint": "8.13.0",
+    "eslint-config-prettier": "8.5.0",
+    "eslint-plugin-prettier": "4.0.0",
+    "eslint-plugin-react": "7.29.4",
+    "jest": "28.0.3",
+    "less": "4.1.2",
+    "less-loader": "10.2.0",
+    "prettier": "2.6.2",
+    "react-app-rewired": "2.2.1",
+    "sass": "1.50.1",
+    "ts-jest": "^28.0.1"
+  }
+}

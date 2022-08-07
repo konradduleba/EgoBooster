@@ -1,0 +1,9 @@
+{
+  "compilerOptions": {
+    "baseUrl": "./src",
+    "typeRoots": ["./src/index.d.ts"],
+    "paths": {
+      "*": ["./src/*"]
+    }
+  }
+}
